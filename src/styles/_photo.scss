@@ -1,0 +1,10 @@
+.photo{
+ max-width: 984px;
+}
+
+
+.photo__img{
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+}

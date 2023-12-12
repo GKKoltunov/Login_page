@@ -1,0 +1,63 @@
+.memory {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+&__input-span{
+  display: flex;
+  gap: 8px;
+}
+
+  &__switch {
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: lightgray;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  &__switcher {
+    
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  &__checkbox {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    opacity: 0;
+    z-index: 10;
+    
+  }
+
+  &__checkbox:checked ~ &__switcher { 
+  transform: translateX(100%);
+  }
+
+ &__span{
+  color:  #1A1A1A;
+font-family: SF Pro Display,sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; 
+letter-spacing: 0.3px;
+ }
+
+ &__link{
+  color: #007AFF;
+text-align: right;
+font-family: SF Pro Display, sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; 
+letter-spacing: 0.3px;
+ }
+}
