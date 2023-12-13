@@ -85,7 +85,7 @@ header {
 }
 
 h1 {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-family: Poppins;
   font-size: 20px;
   font-style: normal;
@@ -139,9 +139,9 @@ label {
   width: 100%;
   padding: 10px 24px;
   margin: 32px 0;
-  background: #007AFF;
+  background: #007aff;
   border-radius: 6px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Roboto;
   font-size: 15px;
@@ -154,7 +154,7 @@ label {
 .line {
   display: block;
   height: 1px;
-  background: #E5E5E5;
+  background: #e5e5e5;
   width: 100%;
 }
 
@@ -167,7 +167,7 @@ label {
   gap: 8px;
   border-radius: 6px;
   background: #333;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
   font-size: 12px;
@@ -183,7 +183,7 @@ label {
   gap: 8px;
 }
 .registr__span {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -191,7 +191,7 @@ label {
   letter-spacing: 0.3px;
 }
 .registr__link {
-  color: #007AFF;
+  color: #007aff;
   text-align: right;
   font-feature-settings: "clig" off, "liga" off;
   font-size: 12px;
@@ -248,9 +248,14 @@ label {
   }
 }
 @media (max-width: 500px) {
+  .forma {
+    width: 100%;
+  }
   .container {
     padding: 16px;
     max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
     height: 100%;
   }
 }
