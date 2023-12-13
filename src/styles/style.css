@@ -209,6 +209,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5px;
 }
 .footer__links {
   display: flex;
@@ -234,12 +235,7 @@ label {
   letter-spacing: -0.4px;
 }
 
-@media (max-width: 500px) {
-  .container {
-    padding: 16px;
-    max-width: 375px;
-    height: 100%;
-  }
+@media (max-width: 1150px) {
   header {
     display: none;
   }
@@ -249,6 +245,13 @@ label {
     justify-content: center;
     gap: 8px;
     padding: 70px 0;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 16px;
+    max-width: 375px;
+    height: 100%;
   }
 }
 .photo {

@@ -170,6 +170,8 @@ letter-spacing: 0.3px;
   display: flex;
 justify-content: space-between;
 align-items: center;
+margin-top: 5px;
+
 
 &__links{
   display: flex;
@@ -200,15 +202,7 @@ letter-spacing: -0.4px;
 }
 
 
-@media(max-width:500px){
-  .container{
-    padding:16px;
-
-    max-width:375px;
-
-  height: 100%;
-  }
-
+@media(max-width:1150px){
   header{
     display: none;
   }
@@ -220,4 +214,16 @@ letter-spacing: -0.4px;
     gap: 8px;
     padding: 70px 0;
   }
+}
+
+@media(max-width:500px){
+  .container{
+    padding:16px;
+
+    max-width:375px;
+
+  height: 100%;
+  }
+
+  
 }
