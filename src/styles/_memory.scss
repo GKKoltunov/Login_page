@@ -15,6 +15,7 @@
     background: lightgray;
     border-radius: 10px;
     position: relative;
+    transition: 1s;
   }
 
   &__switcher {
@@ -40,6 +41,10 @@
   transform: translateX(100%);
   }
 
+ &__checkbox:checked ~ &__switch{
+  background: #007AFF;
+ }
+
  &__span{
   color:  #1A1A1A;
 font-family: SF Pro Display,sans-serif;
@@ -61,3 +66,5 @@ line-height: 20px;
 letter-spacing: 0.3px;
  }
 }
+
+

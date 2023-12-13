@@ -38,6 +38,19 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1150px) {
+  .photo {
+    display: none;
+  }
+  .forma {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    padding: 0;
+  }
+}
 .container {
   width: 456px;
   padding: 48px;
@@ -68,6 +81,7 @@ header {
 .forma__form {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 h1 {
@@ -113,6 +127,12 @@ label {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+.eye {
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
 }
 
 .signin {
@@ -181,6 +201,10 @@ label {
   letter-spacing: 0.3px;
 }
 
+.logo {
+  display: none;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -210,6 +234,23 @@ label {
   letter-spacing: -0.4px;
 }
 
+@media (max-width: 500px) {
+  .container {
+    padding: 16px;
+    max-width: 375px;
+    height: 100%;
+  }
+  header {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 70px 0;
+  }
+}
 .photo {
   max-width: 984px;
 }
@@ -238,6 +279,7 @@ label {
   background: lightgray;
   border-radius: 10px;
   position: relative;
+  transition: 1s;
 }
 .memory__switcher {
   width: 20px;
@@ -256,6 +298,9 @@ label {
 }
 .memory__checkbox:checked ~ .memory__switcher {
   transform: translateX(100%);
+}
+.memory__checkbox:checked ~ .memory__switch {
+  background: #007AFF;
 }
 .memory__span {
   color: #1A1A1A;

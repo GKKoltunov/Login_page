@@ -4,3 +4,19 @@ body{
   padding: 16px;
   margin: 0 auto;
 }
+
+@media(max-width:1150px){
+  .photo{
+    display: none;
+  }
+  .forma{
+    margin: 0 auto;
+  }
+}
+
+
+@media(max-width:500px){
+  body{
+  padding: 0;
+  }
+}
